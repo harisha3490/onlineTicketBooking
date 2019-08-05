@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="YCC - Sanity,Regression,Release_Aryabhatta,Release_Amelia,Release_NeilArmstrong,Release_July Testing">
+  <parameter name="suiteName" value="YCC_APP_Suite"/>
+  <listeners>
+    <listener class-name="com.automation.rdashboard.ReportDashboardPlugin"/>
+    <listener class-name="com.yodlee.ycc.testng.TestListener"/>
+  </listeners>
+  <test name="YCC - Test with - Tier2">
+    <parameter name="userType" value="Tier2"/>
+  </test> <!-- YCC - Test with - Tier2 -->
+</suite> <!-- YCC - Sanity,Regression,Release_Aryabhatta,Release_Amelia,Release_NeilArmstrong,Release_July Testing -->

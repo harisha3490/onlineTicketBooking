@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testvagrant Assignment">
+	<listeners>
+		<listener class-name="com.testvagrant.listeners.TestListener" />
+	</listeners>
+
+	<test name="testvagrant Assignment">
+		<classes>
+			<class name="com.testvagrant.testscripts.testWhatFixEmbededFlowCheck" />
+		</classes>
+	</test>
+</suite> 
+
