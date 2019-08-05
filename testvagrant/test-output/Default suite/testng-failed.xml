@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testvagrant.testscripts.SIgnInTestSuite">
+      <class name="com.testvagrant.testscripts.FlightBookingTest">
         <methods>
-          <include name="quitbrowser"/>
-          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing"/>
           <include name="setup"/>
+          <include name="testThatResultsAppearForAOneWayJourney"/>
           <include name="close"/>
           <include name="launch"/>
+          <include name="quitbrowser"/>
         </methods>
-      </class> <!-- com.testvagrant.testscripts.SIgnInTestSuite -->
+      </class> <!-- com.testvagrant.testscripts.FlightBookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

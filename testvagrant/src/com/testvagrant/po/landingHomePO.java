@@ -68,16 +68,25 @@ public class landingHomePO extends Testbase{
     
     @FindBy(xpath="//ul[@id='ui-id-1']/li")
 	public List<WebElement> actnDdn_SelctionFromLocation;
+
+    
+    @FindBy(className="autoComplete")
+   	public WebElement actnDdn_SelctionFromLocation2;
     
     @FindBy(xpath="//ul[@id='ui-id-2']/li")
    	public List<WebElement> actnDdn_SelctionToLocation;
+    
+  
+    
+    @FindBy(xpath="//ul[@id='ui-id-2']")
+   	public WebElement actnDdn_SelctionToLocation1;
     
     @FindBy(id = "SearchBtn")
     public WebElement btn_Search;
     
 
     
-    @FindBy(xpath="//*[@className='searchSummary']")
+    @FindBy(xpath="//*[@class='searchSummary']")
   	public WebElement searchSummarytext;
 
     

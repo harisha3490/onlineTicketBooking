@@ -15,7 +15,7 @@ public class Testbase {
 	public static WebDriver driver;
 	Logger log = Logger.getLogger(getClass().getSimpleName());
 
-	public utilities oUtil = new utilities();
+	public Commonutilities oUtil = new Commonutilities();
 	
 	@BeforeSuite
 	public void launch() throws Exception 

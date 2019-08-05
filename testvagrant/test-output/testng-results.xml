@@ -2,24 +2,52 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7801" started-at="2019-08-05T09:47:18Z" finished-at="2019-08-05T09:47:25Z">
+  <suite name="Default suite" duration-ms="18641" started-at="2019-08-05T15:03:00Z" finished-at="2019-08-05T15:03:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7801" started-at="2019-08-05T09:47:18Z" finished-at="2019-08-05T09:47:25Z">
-      <class name="com.testvagrant.testscripts.SIgnInTestSuite">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.testvagrant.testscripts.SIgnInTestSuite@148080bb]" name="launch" is-config="true" duration-ms="4138" started-at="2019-08-05T15:17:13Z" finished-at="2019-08-05T15:17:18Z">
+    <test name="Default test" duration-ms="18641" started-at="2019-08-05T15:03:00Z" finished-at="2019-08-05T15:03:19Z">
+      <class name="com.testvagrant.testscripts.FlightBookingTest">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.testvagrant.testscripts.FlightBookingTest@5e0826e7]" name="launch" is-config="true" duration-ms="4155" started-at="2019-08-05T20:32:56Z" finished-at="2019-08-05T20:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.testvagrant.testscripts.SIgnInTestSuite@148080bb]" name="setup" is-config="true" duration-ms="25" started-at="2019-08-05T15:17:18Z" finished-at="2019-08-05T15:17:18Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testvagrant.testscripts.FlightBookingTest@5e0826e7]" name="setup" is-config="true" duration-ms="45" started-at="2019-08-05T20:33:00Z" finished-at="2019-08-05T20:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:com.testvagrant.testscripts.SIgnInTestSuite@148080bb]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="6571" started-at="2019-08-05T15:17:18Z" finished-at="2019-08-05T15:17:24Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:com.testvagrant.testscripts.FlightBookingTest@5e0826e7]" name="testThatResultsAppearForAOneWayJourney" duration-ms="17326" started-at="2019-08-05T20:33:01Z" finished-at="2019-08-05T20:33:18Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=75.0.3770.142)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'IN-L2278', ip: '192.168.65.131', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61290}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\harisha\AppData\Local\Temp\scoped_dir18192_23311}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 57b4c890ba355d87c2c8423cb3108c10]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.testvagrant.testscripts.SIgnInTestSuite.shouldThrowAnErrorIfSignInDetailsAreMissing(SIgnInTestSuite.java:45)
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'IN-L2278', ip: '192.168.65.131', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61290}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\harisha\AppData\Local\Temp\scoped_dir18192_23311}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 57b4c890ba355d87c2c8423cb3108c10
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1049)
+	at com.testvagrant.testscripts.FlightBookingTest.testThatResultsAppearForAOneWayJourney(FlightBookingTest.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,19 +75,19 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:com.testvagrant.testscripts.SIgnInTestSuite@148080bb]" name="quitbrowser" is-config="true" duration-ms="1188" started-at="2019-08-05T15:17:24Z" finished-at="2019-08-05T15:17:25Z">
+        </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
+        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:com.testvagrant.testscripts.FlightBookingTest@5e0826e7]" name="quitbrowser" is-config="true" duration-ms="1226" started-at="2019-08-05T20:33:18Z" finished-at="2019-08-05T20:33:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.testvagrant.testscripts.SIgnInTestSuite@148080bb]" name="close" is-config="true" duration-ms="0" started-at="2019-08-05T15:17:25Z" finished-at="2019-08-05T15:17:25Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.testvagrant.testscripts.FlightBookingTest@5e0826e7]" name="close" is-config="true" duration-ms="1" started-at="2019-08-05T20:33:19Z" finished-at="2019-08-05T20:33:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.testvagrant.testscripts.SIgnInTestSuite -->
+      </class> <!-- com.testvagrant.testscripts.FlightBookingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

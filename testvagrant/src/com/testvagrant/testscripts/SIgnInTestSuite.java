@@ -2,6 +2,7 @@ package com.testvagrant.testscripts;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.Augmentable;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -41,6 +42,7 @@ public class SIgnInTestSuite extends Testbase {
 	        String errorMessage = land.err_InSubmission.getText();
 	       
 //Function to validate the assertion in the script
+	        validate=new Validations();
 
 	        validate.AssertFun(errorMessage, land.sErrorString[0], land.sErrorString[1]);
 	}

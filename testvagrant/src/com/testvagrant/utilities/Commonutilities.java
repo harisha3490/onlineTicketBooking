@@ -8,10 +8,14 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.testvagrant.po.landingHomePO;
 
-public  class utilities {
+public  class Commonutilities {
 //	landingHomePO land;
 //	land=new landingHomePO(driver);
 	public static String currentPath;
@@ -47,11 +51,27 @@ public  class utilities {
                }catch(Exception ea) {
                log.info("page still not loaded");
                }
-               Thread.sleep(500);
-               
+        
         }
+        WebDriverWait wait = new WebDriverWait(Testbase.driver, itimetowait);
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
         return bResultFlag; 
 
   }
+	
+	public void ufWaitForElementDisplayed1(WebElement element, int itimetowait) throws Exception {
+        
+        WebDriverWait wait = new WebDriverWait(Testbase.driver, itimetowait);
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
+
+  } 
+	public void waitFor(int durationInMilliSeconds) {
+      try {
+          Thread.sleep(durationInMilliSeconds);
+      } catch (InterruptedException e) {
+          e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+      }
+  }
+	
 	
 }
